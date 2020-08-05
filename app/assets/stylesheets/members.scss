@@ -14,12 +14,9 @@ main {
 }
 
 header {
-  background-image: url("ship-at-sea.jpg");
+  background-color: rgba(244, 244, 244, 1);
   text-align: center;
   padding: 2em;
-  color: white;
-  background-size: cover;
-
 }
 
 header img {
@@ -79,5 +76,5 @@ footer {
 .table-members {
  background-color: rgba(244, 244, 244, 1);
  padding: 10px 10px 10px 0;
- margin-bottom: 10px;
+ margin: 10px 50px 10px 50px;
 }
