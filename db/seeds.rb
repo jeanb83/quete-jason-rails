@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+Member.destroy_all
+
+puts 'Creating 48 fake members...'
+48.times do
+  member = Member.new(
+    name:  Faker::Name.male_first_name
+  )
+  member.save!
+end
+puts 'Finished!'
